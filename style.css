@@ -1,12 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-  color: #2f2f2f;
   margin: 0;
-
   font-family: "Montserrat", sans-serif;
-}
+  }
 #header {
-  background-color: #1abc9c;
+  background-color: #22262B;
   height: 150px;
   line-height: 150px;
 }
@@ -45,7 +43,7 @@ body {
   margin: 0 auto;
 }
 #footer {
-  background-color: #2f2f2f;
+  background-color: #22262B;
   padding: 50px 0;
 }
 .column {
@@ -105,6 +103,6 @@ p {
 .post-author img {
   border-radius: 50%;
 }
-.post-container:nth-child(even) {
-  background-color: #2f2f2f;
+#content {
+  background-color: #292C34;
 }
