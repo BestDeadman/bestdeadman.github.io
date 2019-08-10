@@ -5,8 +5,8 @@ body {
   }
 #header {
   background-color: #22262B;
-  height: 150px;
-  line-height: 150px;
+  height: 100px;
+  line-height: 100px;
 }
 #header a {
   color: white;
