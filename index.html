@@ -2,30 +2,32 @@
 <html>
   <head>
     <title>My Blog</title>
+    <meta charset = "utf-8" >
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div id="header">
+    <div id="header" class="colorAnimation">
       <div class="container">
         <a id=header-title href="index.html">My Blog</a>
         <ul id="header-nav">
-          <li><button onclick="switchTheme()"><p id="themeStatus">Night Theme - OFF</p></button></li>
+          <li><input type="image" onclick="switchTheme()" src="svg.svg" width="20px" height="20px" id="themeButton" class="rotate"></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div id="content">
+    <div id="content" class="colorAnimation">
       <div class="post-container">
         <div class="post">
           <div class="post-author">
             <img src="me.png">
-            <span>BestDeadman</span>
+            <span id="log">BestDeadman</span>
           </div>
           <p class="post-date">11.08.2019</p>
-          <h3 class='post-title'>Night theme is here</h3>
+          <h3 class='postTitle'>Night theme is here</h3>
           <div class="post-content">
+            <p>Try to click it!<input type="image" onclick="switchTheme()" src="svg.svg" width="50px" height="50px"></button></p>
             <p></p>
           </div>
         </div>
@@ -37,7 +39,7 @@
             <span>Me</span>
           </div>
           <p class="post-date">Today</p>
-          <h3 class='post-title'>Becoming a web developer</h3>
+          <h3 class='postTitle'>Becoming a web developer</h3>
           <div class="post-content">
             <p>If somebody would have told me a week a go that I would be able to make a website, I would not have believed them.</p>
             <p>Just a few days later, I came across <a href="http://getmimo.com">Mimo</a> and started to work on a <strong>real blog</strong>.</p>
@@ -51,14 +53,14 @@
             <span>NotMe</span>
           </div>
            <p class="post-date">Yestoday</p>
-          <h3 class='post-title'>Test</h3>
+          <h3 class='postTitle'>Test</h3>
           <div class="post-content">
             <p>Hello!</p>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer">
+    <div id="footer" class="colorAnimation">
       <div class="container">
         <div class="column">
           <h4>My Links</h4>

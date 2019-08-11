@@ -2,11 +2,19 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  }
+}
+.colorAnimation {
+  transition-property: background-color;
+  transition-property: all;
+  transition-duration: 2s;
+}
 #header {
   background-color: #22262B;
   height: 100px;
   line-height: 100px;
+}
+#themeButton {
+  line-height: 200px;
 }
 #header a {
   color: white;
@@ -45,6 +53,8 @@ body {
 #footer {
   background-color: #22262B;
   padding: 50px 0;
+  vertical-align: bottom;
+  position:inherit;
 }
 .column {
   min-width: 300px;
@@ -90,8 +100,8 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0,1em;
 }
-h1, h2, h3, h4 {
-  color: #333;
+.postTitle {
+  color: #0984FF;
 }
 p {
   line-height: 1.5;
@@ -105,4 +115,4 @@ p {
 }
 #content {
   background-color: #292C34;
-}
+  color: white;
