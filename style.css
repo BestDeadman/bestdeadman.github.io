@@ -6,12 +6,15 @@ body {
 .colorAnimation {
   transition-property: background-color;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 #header {
   background-color: #22262B;
   height: 100px;
   line-height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 #themeButton {
   line-height: 200px;
@@ -24,7 +27,7 @@ body {
   letter-spacing: 0.1em;
 }
 #header a:hover {
-  color: #222;
+  color: #F6A623;
 }
 #header-title {
   display: block;
@@ -54,7 +57,8 @@ body {
   background-color: #22262B;
   padding: 50px 0;
   vertical-align: bottom;
-  position:inherit;
+  position: inherit;
+  width: 100%;
 }
 .column {
   min-width: 300px;
@@ -116,3 +120,10 @@ p {
 #contentBlock {
   background-color: #292C34;
   color: white;
+  position: relative;
+  top: 100px;
+  z-index: 2;
+}
+.fullBody {
+  background-color: #292C34;
+}
