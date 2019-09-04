@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Blog</title>
+    <title>BD Blog</title>
     <meta charset = "utf-8" >
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="script.js"></script>
   </head>
-  <body class="fullBody">
-    <div id="header" class="colorAnimation">
-      <div class="container">
-        <a id=header-title href="index.html">My Blog</a>
-        <ul id="header-nav">
-          <li id="themeIcon"><input type="image" onclick="switchTheme()" src="images/themeSwitch/moon.svg" width="20px" height="20px" id="themeButton" class="rotate"></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <body>
+    <header class="colorAnimation">
+      <a href="index.html"><img src="images/Logo/Blog_logo.svg" alt="BD Blog" href="index.html"></a>
+      <ul id="header-nav">
+        <li id="themeIcon"><input type="image" onclick="switchTheme()" src="images/themeSwitch/moon.svg" width="20px" height="20px" id="themeButton" class="rotate"></li>
+        <li><a href="">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
     <div id="contentBlock" class="colorAnimation">
       <div class="post-container">
         <div class="post">
@@ -76,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div id="footer" class="colorAnimation">
+    <footer class="colorAnimation">
       <div class="container">
         <div class="column">
           <h4>My Links</h4>
@@ -94,6 +96,6 @@
           <p><style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Lato', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/BestDeadman"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a></p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

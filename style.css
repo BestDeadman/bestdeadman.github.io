@@ -8,41 +8,32 @@ body {
   transition-property: all;
   transition-duration: 1s;
 }
-#header {
+header {
   background-color: #22262B;
   height: 100px;
-  line-height: 100px;
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#themeButton {
-  line-height: 200px;
+header img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-left: 50px;
 }
-#header a {
+header a {
   color: white;
   text-decoration: none;
-
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-#header a:hover {
-  color: #F6A623;
-}
-#header-title {
-  display: block;
-  float: left;
-
-  font-size: 20px;
-  font-weight: bold;
-
-  margin-left: 50px;
-}
 #header-nav {
-  display: block;
+  display: flex;
   float: right;
-  margin-top: 0;
-
+  margin-top: 20px;
   margin-right: 50px;
 }
 #header-nav li {
@@ -53,7 +44,7 @@ body {
   max-width: 1000;
   margin: 0 auto;
 }
-#footer {
+footer {
   background-color: #22262B;
   padding: 50px 0;
   vertical-align: bottom;
@@ -66,13 +57,13 @@ body {
   vertical-align: top;
   margin-left: 50px;
 }
-#footer h4 {
+footer h4 {
  color: white;
  text-transform: uppercase;
  letter-spacing: 0.1em;
 
 }
-#footer P {
+footer P {
   color: white;
 }
 a {
@@ -121,9 +112,13 @@ p {
   background-color: #292C34;
   color: white;
   position: relative;
-  top: 100px;
   z-index: 2;
 }
-.fullBody {
-  background-color: #292C34;
+@media all and (max-width: 799px) and (min-width: 300px) {
+  #contentBlock{width: 100%; padding: 10px;}
+  video{height: 240px; width: 360px;}
 }
+
+ img {
+   max-width: 100%;
+ }
